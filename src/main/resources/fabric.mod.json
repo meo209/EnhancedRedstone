@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "enhancedredstone",
+  "version": "${version}",
+  "name": "EnhancedRedstone",
+  "description": "Makes redstone components do more things!",
+  "authors": [],
+  "contact": {},
+  "license": "GPL-3.0",
+  "icon": "assets/enhancedredstone/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "com.meo209.enhancedredstone.client.EnhancedRedstoneClient"
+    ],
+    "main": [
+      "com.meo209.enhancedredstone.EnhancedRedstone"
+    ]
+  },
+  "mixins": [
+    "enhancedredstone.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric-language-kotlin": ">=${kotlin_loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
